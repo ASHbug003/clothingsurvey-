@@ -131,3 +131,10 @@
     </script>
 </body>
 </html>
+fetch('https://formspree.io/f/mvoeqodr', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json'
+    },
+    body: new FormData(document.getElementById('surveyForm'))
+})
